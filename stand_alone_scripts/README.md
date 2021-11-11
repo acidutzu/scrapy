@@ -2,7 +2,7 @@
 
 stand_alone_scrips folder
 
-tip: you cand find put_data_in_mysql.py script into folder stand_alone_scrips
+put_data_in_mysql.py
 
 ----this script will connect to a MySQL database and import file emag_placi_video.csv
 
@@ -38,3 +38,5 @@ here are some mysql basic commands:
 
   
 """------=--=-=-=-=-=-=-=-=-------"""
+- use emag_laptopuri.py to scrape data, a file named emag_laptopuri.csv will be made
+- use emag_placi_video.csv to scrape data, a file named emag_placi_vide.csv vill be created

@@ -14,7 +14,7 @@ tip: you cand find put_data_in_mysql.py script into folder stand_alone_scrips
 
 sudo docker exec -it mysql mysql -p
 
-here are some mysql basic commands
+here are some mysql basic commands:
  
  create database test;
 

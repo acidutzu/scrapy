@@ -10,8 +10,9 @@ class QuotesSpider(scrapy.Spider):
  def parse(self, response):
      for quote in response.css('div.quote'):
          yield {
+             'author': quote.css('small.author::text').get(),
              'quote': quote.css('span.text::text').get(),
-             'author': quote.css('small.author::text').get(), 
+              
          }
      for page_nr in range(0,10):
       next_page = f'http://quotes.toscrape.com/page/{page_nr}/'

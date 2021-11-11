@@ -11,14 +11,18 @@ pwd="parola"
 column_names = ['pret','descriere', 'link']
 
 df = pd.read_csv('emag_placi_video.csv', header = None, names = column_names)
-print(df)
+df2 = pd.read_csv('emag_laptopuri.csv', header = None, names = column_names)
+
+print(df,df2)
 
 df = pd.read_csv('emag_placi_video.csv', header = 0)
-print(df)
+df2 = pd.read_csv('emag_laptopuri.csv', header = 0)
+print(df,df2)
 
-# Create SQLAlchemy engine to connect to MySQL Database
+## Create SQLAlchemy engine to connect to MySQL Database
 engine = create_engine("mysql+pymysql://{user}:{pw}@{host}/{db}"
 				.format(host=hostname, db=dbname, user=uname, pw=pwd))
-
-# Convert dataframe to sql table 
-df.to_sql('produse', engine, if_exists='append', index=False)
+#
+## Convert dataframe to sql table 
+df.to_sql('placi video', engine, if_exists='replace', index=False)
+df2.to_sql('laptopuri', engine, if_exists='replace', index=False)

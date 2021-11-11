@@ -1,5 +1,4 @@
 import csv
-import sys
 import pymysql
 
 conn = pymysql.connect(host="192.168.1.131", user="root", password="parola", database="test")

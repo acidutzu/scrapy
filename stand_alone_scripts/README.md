@@ -1,6 +1,7 @@
 """------=--=-=-=-=-=-=-=-=-------"""
 
 stand_alone_scrips folder
+-method 1 using:
 
 put_data_in_mysql.py
 
@@ -35,6 +36,15 @@ here are some mysql basic commands:
  #view content of the table produse
    
  desc produse;
+ 
+ 
+ -method 2 using:
+ put_data_in_mysql_using_pandas.py
+
+--- more easy using pandas and sqlalchemy because there is no need to manualy create table columns content
+--- there is just one step, to login into mysql docker container and create a database with the name: test_3 in this case, also edit the script column_names to match your file.cvs column names , you can the run the script
+--- enjoy
+
 
   
 """------=--=-=-=-=-=-=-=-=-------"""

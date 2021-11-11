@@ -12,7 +12,7 @@ tip: you cand find put_data_in_mysql.py script into folder stand_alone_scrips
 
 ----connect to docker container tha runs MySQL:
 
-sudo docker -it mysql mysql -p
+sudo docker exec -it mysql mysql -p
 
 here are some mysql basic commands
  
